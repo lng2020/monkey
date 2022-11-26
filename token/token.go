@@ -33,6 +33,7 @@ const (
 	// COMMA and SEMICOLON: Delimiters
 	COMMA     = ","
 	SEMICOLON = ";"
+	COLON     = ":"
 
 	LPAREN   = "("
 	RPAREN   = ")"
