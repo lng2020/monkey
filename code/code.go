@@ -13,7 +13,7 @@ var definition = map[Opcode]*Definition{
 	OpConstant: {"OpConstant", []int{2}},
 }
 
-type Instruction []byte
+type Instructions []byte
 
 type Opcode byte
 
