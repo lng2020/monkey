@@ -44,7 +44,7 @@ func runCompilerTests(t *testing.T, tests []compilerTestCase) {
 
 		bytecode := compiler.Bytecode()
 
-		err = testInstructions(tt.expectedInstructions, bytecode.Constants)
+		err = testInstructions(tt.expectedInstructions, bytecode.Instructions)
 		if err != nil {
 			t.Fatalf("testConstants failed: %s", err)
 		}
@@ -115,4 +115,5 @@ func testIntegerObject(expected int64, actual object.Object) error {
 	if result.Value != expected {
 		return fmt.Errorf("object has wrong value. got=%d, want=%d", result.Value, expected)
 	}
+	return nil
 }
