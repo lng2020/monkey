@@ -25,6 +25,7 @@ const (
 	OpNull
 	OpGetGlobal
 	OpSetGlobal
+	OpArray
 )
 
 var definition = map[Opcode]*Definition{
@@ -46,6 +47,7 @@ var definition = map[Opcode]*Definition{
 	OpNull:          {"OpNull", []int{}},
 	OpGetGlobal:     {"OpGetGlobal", []int{2}},
 	OpSetGlobal:     {"OpSetGlobal", []int{2}},
+	OpArray:         {"OpArray", []int{2}},
 }
 
 type Instructions []byte
