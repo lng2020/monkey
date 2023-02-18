@@ -418,7 +418,7 @@ func TestArrayLiterals(t *testing.T) {
 				code.Make(code.OpSub),
 				code.Make(code.OpConstant, 4),
 				code.Make(code.OpConstant, 5),
-				code.Make(code.OpNull),
+				code.Make(code.OpMul),
 				code.Make(code.OpArray, 3),
 				code.Make(code.OpPop),
 			},
