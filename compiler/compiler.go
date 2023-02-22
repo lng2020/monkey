@@ -254,7 +254,7 @@ func (c *Compiler) Compile(node ast.Node) error {
 			return err
 		}
 
-		c.emit(code.OpReturn)
+		c.emit(code.OpReturnValue)
 	case *ast.CallExpression:
 		err := c.Compile(node.Function)
 		if err != nil {
