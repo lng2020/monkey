@@ -180,11 +180,11 @@ type Hashable interface {
 	HashKey() HashKey
 }
 
-type CompilerFunction struct {
+type CompiledFunction struct {
 	Instructions code.Instructions
 }
 
-func (cf *CompilerFunction) Type() ObjectType { return COMPILED_FUNCTION_OBJ }
-func (cf *CompilerFunction) Inspect() string {
+func (cf *CompiledFunction) Type() ObjectType { return COMPILED_FUNCTION_OBJ }
+func (cf *CompiledFunction) Inspect() string {
 	return fmt.Sprintf("CompiledFunction[%p]", cf)
 }
