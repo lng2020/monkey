@@ -38,8 +38,8 @@ func TestResolveLocal(t *testing.T) {
 	expected := []Symbol{
 		Symbol{Name: "a", Scope: GlobalScope, Index: 0},
 		Symbol{Name: "b", Scope: GlobalScope, Index: 1},
-		Symbol{Name: "b", Scope: GlobalScope, Index: 0},
-		Symbol{Name: "b", Scope: GlobalScope, Index: 1},
+		Symbol{Name: "c", Scope: LocalScope, Index: 0},
+		Symbol{Name: "d", Scope: LocalScope, Index: 1},
 	}
 
 	for _, sym := range expected {
