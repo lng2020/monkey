@@ -696,7 +696,7 @@ oneArg(24);
 			},
 			expectedInstructions: []code.Instructions{
 				code.Make(code.OpConstant, 0),
-				code.Make(code.OpGetGlobal, 0),
+				code.Make(code.OpSetGlobal, 0),
 				code.Make(code.OpGetGlobal, 0),
 				code.Make(code.OpConstant, 1),
 				code.Make(code.OpCall, 1),
